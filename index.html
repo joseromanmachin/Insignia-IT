@@ -11,118 +11,192 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand text-white">
-            <img src="/img/logo.png" width="50%" height="50%" alt="Insignia IT" ">
+    <nav class="navbar navbar-expand-lg navbar bg shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand text-white" style="margin-left: 50px; ">
+            <img src="/img/logo.png" width="90%" height="50%" alt="Insignia IT">
         </a>
         <button class=" navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Contacto</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Twitetr</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Linkding</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Facebook</a>
-                    </li>
-                </ul>
-            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <img src="/img/twitter.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <img src="img/linkedin.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <img src="/img/facebook.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="first-slide" src="img/01.png" width="100%" alt="Impulsa tu carrera">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h4> <b> Impulsa tu carrera </b> con <br> certificaciones de T.I</h4>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="img/01.png" width="100%" alt="Impulsa tu carrera">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1> <b> Impulsa tu carrera </b> con <br> certificaciones de T.I</h1>
 
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar brochure</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar brochure</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="img/02.png" width="100%" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+
+                            <h1> <b>Certificación ISO 37001:2016</b>
+                                <br>
+                                Sistema de Gestión Antisobornos
+                            </h1>
+
+                            <p>Somos tus <b> aliados </b>y te <b>ofrecemos soluciones de servicio en la <br>
+                                    norma ISO 37001</b> que implica el análisis de brecha y riesgo, <br> la
+                                implementación y plan de acción.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar Brochure</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="img/03.png" width="100%" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar Brochure</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="second-slide" src="img/02.png" width="100%" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption text-left">
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
 
-                        <h1> <b>Certificación ISO 37001:2016</b>
-                            <br>
-                            Sistema de Gestión Antisobornos
-                        </h1>
+        </div>
 
-                        <p>Somos tus <b> aliados </b>y te <b>ofrecemos soluciones de servicio en la <br> 
-                            norma ISO 37001</b> que implica el análisis de brecha y riesgo, <br> la 
-                            implementación y plan de acción.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar Brochure</a></p>
+        <!--Contacto-->
+        <div class="row" id="contenedor-contactanos">
+            <div class="col-sm-6">
+                <h1> <b> Contáctanos</b></h1>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="nombre" placeholder="Nombre*" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="correo" placeholder="Correo*" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="celular" placeholder="Celular*" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="mensaje" placeholder="Mensaje" rows="8"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm-6 contacto">
+                <br>
+                <br>
+                <h1>Estás a un click de <br> <b>encontrar tu solución</b> </h1> <br>
+
+
+                <div class="row">
+                    <div class="col-sm-1"><img src="img/placeholder.png" width="25px"></div>
+                    <div class="col-sm-11">
+                        <p>Av. Gregorio Méndez #922 <br>
+                            despacho 101 Col.Centro C.P. <br>
+                            86000, Villahermosa,Tabasco.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"><img src="img/phone-receiver.png" width="25px"> </div>
+                    <div class="col-sm-11">
+                        <p>(993) 141 0004</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"><img src="img/correo.png" width="25px"></div>
+                    <div class="col-sm-11">
+                        <p>contacto@insignia.com.mx</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"><img src="img/facebook-logo.png" width="auto"></div>
+                    <div class="col-sm-11">
+                        <p>Síguenos en redes sociales, <br>
+                            encuentranos como <b>@insigniaitmx</b>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="third-slide" src="img/03.png" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Descargar Brochure</a></p>
-                    </div>
+
+            <div class="col-sm-12">
+                <!--Google map-->
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%">
+                    <iframe width="100%" height="300px"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.6503682690936!2d-92.92309650207447!3d17.99499639240938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd83bd90bfe69%3A0xa379e489de7f0543!2sInsignia%20IT%20S.A.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1591606080200!5m2!1ses-419!2smx"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
+
+                <!--Google Maps-->
             </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+
     </div>
 
-    <footer style="background-color: #0072D1;">
-
-        <div class="row" style="padding: 50px">
-            <div class="col-sm">
-                <h1><b>¡HOLA!</b></h1>
-                <P>Estamos listos para escuchar sus <br> necesidades y ¡darles solución!</P>
-            </div>
-            <div class="col-sm">
-                <h1><b>CONTÁCTANOS</b></h1>
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-11">contacto@insignia.com.mx</div>
+    <footer >
+        <div class="container">
+                <div class="row" style="padding: 25px">
+                    <div class="col-sm-6">
+                        <h1><b>¡HOLA!</b></h1>
+                        <P>Estamos listos para escuchar sus <br> necesidades y ¡darles solución!</P>
+                    </div>
+                    <div class="col-sm-6">
+                        <h1><b>CONTÁCTANOS</b></h1>
+                        <div class="row">
+                            <div class="col-sm-1"><img src="img/correo.png" width="100%" alt=""></div>
+                            <div class="col-sm-11">contacto@insignia.com.mx</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1"><img src="img/phone-receiver.png" width="100%" alt=""></div>
+                            <div class="col-sm-11">(993) 141 0004</div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-11">(993) 141 0004</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copyright -->
-        <div style="background-color: #0072D1" class="footer-copyright text-center py-3">© 2020 Insignia IT. Todos los
-            deredchos reservados.
-        </div>
-        <!-- Copyright -->
+       
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,11 +1,48 @@
 body{
     color: white;
     font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+}
+nav{
+    height: 80px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+}
+body label{
+    color: black;
 }
 
 h1 b{
     margin-bottom: 100px;
     color: #B1D236;
+}
+
+footer{
+    background-color: #0072D1;
+}
+
+form .btn {
+    width: 150px;
+    background-color: #B1D236;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contacto h1{
+    color: #0072D1;
+}
+.contacto h1 b{
+    color:#0072D1 ;
+}
+
+.contacto p{
+    color:#0072D1 ;
+}
+
+
+#contenedor-contactanos{
+    padding: 50px;
 }
 
 
