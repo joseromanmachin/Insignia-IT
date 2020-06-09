@@ -1,0 +1,167 @@
+<?php
+session_start();
+$time = time();
+$_SESSION['time'] = $time;
+$salt = 'D54C43B824AC3E305A5EBB282CBF33733DC112387EC92C633790BDF301AE855D';
+$token = sha1($salt . $time);
+?>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Insignia IT</title>
+        <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <a class="navbar-brand text-white" style="margin-left: 50px; ">
+                    <img src="/img/logo.png" width="100px" alt="Insignia IT">
+                </a>
+                <button class=" navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link"> Inicio </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link seleccionado"><strong>Contacto</strong> </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://twitter.com/insignia_it" class="nav-link">
+                                <img src="/img/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">
+                                <img src="img/linkedin.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="https://web.facebook.com/insigniaitmx" class="nav-link">
+                                <img src="/img/facebook.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <!--Contacto-->
+                <div class="row" id="contenedor-contactanos">
+                    <div class="col-sm-6 col-12">
+                        <h1> <b> Contáctanos</b></h1>
+                        <form name='formulario' id='formulario' method='post' action='enviar.php' target=' _self ' enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type='text ' name='Nombre ' id='Nombre ' class="form-control" placeholder="Nombre" required>
+
+                            <input type='text ' name='email ' id='email ' class="form-control" placeholder="Correo electrónico" required>
+
+                            <input type='text ' name='asunto ' id='asunto ' class="form-control" placeholder="Asunto" required />
+
+                            <textarea name="mensaje" cols="50" rows="10" id="mensaje" class="form-control" placeholder="Mensaje" required></textarea>
+                            <input type="hidden" name="token"  value="<?php echo $token; ?>">
+                            <br>
+                            <p>
+                                <input type='submit ' value='Enviar ' class="btn ">
+                            </p>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6 col-12 contacto">
+                    <br>
+                    <br>
+                    <h1>Estás a un click de <br> <b>encontrar tu solución</b> </h1> <br>
+
+
+                    <div class="row">
+                        <div class="col-sm-1 col-2"><img src="img/placeholder.png" width="25px"></div>
+                        <div class="col-sm-11 col-10">
+                            <p>Av. Gregorio Méndez #922 <br> despacho 101 Col.Centro C.P. <br> 86000, Villahermosa,Tabasco.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 col-2"><img src="img/phone-receiver.png" width="25px"> </div>
+                        <div class="col-sm-11 col-10">
+                            <p>(993) 141 0004</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 col-2"><img src="img/correo.png" width="25px"></div>
+                        <div class="col-sm-11 col-10">
+                            <p>contacto@insignia.com.mx</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 col-2"><img src="img/facebook-logo.png" width="auto"></div>
+                        <div class="col-sm-11 col-10">
+                            <p>Síguenos en redes sociales, <br> encuentranos como <b>@insigniaitmx</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-sm-12">
+            <!--Google map-->
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%">
+                <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.6503682690936!2d-92.92309650207447!3d17.99499639240938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd83bd90bfe69%3A0xa379e489de7f0543!2sInsignia%20IT%20S.A.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1591606080200!5m2!1ses-419!2smx"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <!--Google Maps-->
+        </div>
+        <div style="background-color: #B1D236; height: 15px; width: 100%px;">
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <h1><b>¡HOLA!</b></h1>
+                        <P>Estamos listos para escuchar sus <br> necesidades y ¡darles solución!</P>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <h1><b>CONTÁCTANOS</b></h1>
+                        <div class="row ">
+                            <div class="col-sm-1 col-2 "><img src="img/correo.png " width="100% " alt=" "></div>
+                            <div class="col-sm-11 col-10 ">contacto@insignia.com.mx</div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-1 col-2 "><img src="img/phone-receiver.png " width="100% " alt=" "></div>
+                            <div class="col-sm-11 col-10 ">(993) 141 0004</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="background-color: white; height: 2px; width: 100%px; ">
+            </div>
+
+            <div class="container " style="text-align: center; margin-top: 10px; padding-bottom: 10px; ">
+                © 2020 Insignia IT. Todos los derechos reservados.
+            </div>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</head>
+
+</body>
+
+</html>
