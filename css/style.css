@@ -1,42 +1,80 @@
-@media (min-width: 750px) {
+@media (min-width: 768px) {
     .carousel-caption {
         z-index: 3;
         margin-bottom: 150px;
-        margin-left: -100px;
+        margin-left: -80px;
+    }
+
+    .carousel-caption h1 {
+        padding: 10px;
+        font-size: 26px;
+    }
+    .item-personalizado {
+        width: 100%;
+        height: 700px;
     }
     #banner-moodle {
         font-size: 22px;
     }
     #banner-moodle b {
-        font-size: 26px;
+        font-size: 22px;
     }
-    #banner-gnosis h1{
+    #banner-gnosis h1 {
         font-size: 22px;
         background-color: #0672cd;
         color: white;
-
     }
-
     #banner-corrupcion {
         font-size: 22px;
+        padding: 10px;
+
+    }
+    #banner-talento {
+        font-size: 22px;
+        background-color: #0672cd;
+        color: white;
+    }
+    #banner-talento img {
+        position: relative;
+        width: 30px;
+        height: 30px;
     }
 }
 
 @media (max-width: 560px) {
     .carousel-caption {
         z-index: 3;
-        margin-bottom: 40px;
+        margin-bottom: 150px;
+        margin-left: -10px;
     }
 
-    #texto-modlee {
-        font-size: 30px;
+    .carousel-caption h1 {
+        padding: 10px;
+        font-size: 24px;
     }
-
-    #banner-gnosis h1{
-        font-size: 220%;
-
+    .item-personalizado {
+        width: 100%;
+        height: 780px;
     }
-
+    #banner-moodle {
+        font-size: 22px;
+    }
+    #banner-moodle b {
+        font-size: 22px;
+    }
+    #banner-gnosis h1 {
+        font-size: 22px;
+        background-color: #0672cd;
+        color: white;
+    }
+    #banner-corrupcion {
+        font-size: 22px;
+    }
+    #banner-talento {
+        font-size: 22px;
+        background-color: #0672cd;
+        color: white;
+    }
 }
 
 /*@media (max-width: 400px) {
@@ -54,8 +92,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-nav{
-    box-shadow: 0px 0px 18px -7px rgba(0,0,0,1);}
+nav {
+    box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 1);
+}
+
 body {
     color: white;
 }
@@ -130,14 +170,46 @@ footer h1 b {
     height: 100;
 }
 
-.item-personalizado {
-    width: 100%;
-    height: 780px;
+.indicador-personalizado {
+  /*  background-color: #000000;
+    border-radius: 25%;
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid #B1D236;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; */
 }
 
-.indicador-personalizado {
-    background-color: #000000;
-    border-radius: 25%;
+.triangulo-back{
+       margin: auto;
+       top: 70px;
+       left: 0;
+       right: 0;
+       width: 30px;
+       height: 30px;
+       -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       border-left: 4px solid #B1D236;
+       border-bottom: 4px solid #B1D236;
+
+}
+
+.triangulo-next{
+    margin: auto;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: rotate(220deg);
+    -moz-transform: rotate(220deg);
+    -o-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    border-left: 4px solid #B1D236;
+    border-bottom: 4px solid #B1D236;
+
 }
 
 /* Modlee */
@@ -153,15 +225,13 @@ footer h1 b {
 }
 
 #banner-moodle {
-    padding: 15px;
+    padding: 10px;
     background-color: #f98012;
     border-radius: 0px 200px 200px 0px;
     /*margin-left: -50px; */
     padding-left: 10px;
     margin-bottom: 20px;
 }
-
-
 
 /* Gnosis */
 
@@ -184,8 +254,17 @@ footer h1 b {
     font-size: 20px;
     color: black;
     border-radius: 0px 200px 200px 0px;
+    margin-bottom: 20px;
+}
+
+/* Talento TI*/
+
+#banner-talento {
+    font-size: 22px;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 0px 200px 200px 0px;
+    color: white;
 }
 
 /* Servicios  */
