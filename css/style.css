@@ -33,28 +33,69 @@
         height: 20px;
     }
     .item-personalizado {
-        max-width: 100%;
+        align-items: center ;
+        max-width: 1140px;
         max-height: 300px;
     }
-    #boton-moodle {
-        margin-bottom: 10px;
-    }
-    #boton-gnosis {
-        margin-bottom: 25px;
-    }
+
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .carousel-caption {
-    z-index: 3
+    z-index: 3;
+    margin-bottom: 230px;
+    margin-left: -150px;
 }
 
+#texto-modlee {
+    color: black;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#texto-modlee b{
+    color: #f98012;
+}
+
+#banner-moodle{
+    padding: 10px;
+    background-color: #f98012; 
+    border-radius: 0px 200px 200px 0px; 
+    /*margin-left: -50px; */
+    padding-left: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#banner-moodle b{
+    color: black;
+}
+
+#banner-gnosis{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0672cd; 
+    border-radius: 0px 200px 200px 0px; 
+    /*margin-left: -50px; */
+    padding-left: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#banner-gnosis b{
+    color: white;
+}
+#boton-brochure{
+    color: white;
+    background-color: #bad148;
+    border-color:#bad148 ;
+}
 .item-personalizado {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 .carousel-indicators li {
@@ -66,8 +107,6 @@
 
 body {
     color: white;
-    font-family: 'Roboto', sans-serif;
-    background-color: #FAFAFA;
 }
 
 body label {
