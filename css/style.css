@@ -1,110 +1,61 @@
-@media all and (max-width: 520px) {
-    .carousel-caption H1 {
-        font-size: 10px;
+@media (min-width: 750px) {
+    .carousel-caption {
+        z-index: 3;
+        margin-bottom: 150px;
+        margin-left: -100px;
     }
-    .carousel-caption p {
-        font-size: 11px;
+    #banner-moodle {
+        font-size: 22px;
     }
-    .carousel-caption a {
-        padding: 0;
-        font-size: 12px;
-        width: 130px;
-        height: 20px;
+    #banner-moodle b {
+        font-size: 26px;
     }
-    #boton-moodle {
-        margin-bottom: 80px;
+    #banner-gnosis h1{
+        font-size: 22px;
+        background-color: #0672cd;
+        color: white;
+
     }
-    #boton-gnosis {
-        margin-bottom: 90px;
+
+    #banner-corrupcion {
+        font-size: 22px;
     }
 }
 
-@media all and (max-width: 720px) {
-    .carousel-caption H1 {
-        font-size: 16px;
+@media (max-width: 560px) {
+    .carousel-caption {
+        z-index: 3;
+        margin-bottom: 40px;
     }
-    .carousel-caption p {
-        font-size: 11px;
+
+    #texto-modlee {
+        font-size: 30px;
     }
-    .carousel-caption a {
-        padding: 0;
-        font-size: 12px;
-        width: 130px;
-        height: 20px;
-    }
-    .item-personalizado {
-        align-items: center ;
-        max-width: 1140px;
-        max-height: 300px;
+
+    #banner-gnosis h1{
+        font-size: 220%;
+
     }
 
 }
+
+/*@media (max-width: 400px) {
+    .carousel-caption h1 {
+        font-size: 200%;
+    }
+    .carousel-caption h3 {
+        font-size: 80%;
+    }
+}*/
+
+/* Elementos Gnerales */
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-.carousel-caption {
-    z-index: 3;
-    margin-bottom: 230px;
-    margin-left: -150px;
-}
-
-#texto-modlee {
-    color: black;
-    font-size: 26px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-#texto-modlee b{
-    color: #f98012;
-}
-
-#banner-moodle{
-    padding: 10px;
-    background-color: #f98012; 
-    border-radius: 0px 200px 200px 0px; 
-    /*margin-left: -50px; */
-    padding-left: 10px;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-#banner-moodle b{
-    color: black;
-}
-
-#banner-gnosis{
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #0672cd; 
-    border-radius: 0px 200px 200px 0px; 
-    /*margin-left: -50px; */
-    padding-left: 10px;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-#banner-gnosis b{
-    color: white;
-}
-#boton-brochure{
-    color: white;
-    background-color: #bad148;
-    border-color:#bad148 ;
-}
-.item-personalizado {
-    width: 100%;
-    height: 700px;
-}
-
-.carousel-indicators li {
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #B1D236;
-}
-
+nav{
+    box-shadow: 0px 0px 18px -7px rgba(0,0,0,1);}
 body {
     color: white;
 }
@@ -112,6 +63,32 @@ body {
 body label {
     color: black;
 }
+
+h1 {
+    color: #0072D1;
+}
+
+h1 b {
+    margin-bottom: 100px;
+    color: #0072D1;
+}
+
+footer {
+    background-color: #0072D1;
+    padding: 25px;
+}
+
+footer h1 b {
+    color: #B1D236;
+}
+
+/* Menu */
+
+.seleccionado {
+    border-bottom: 4px solid #B1D236;
+}
+
+/* Clases Boostrap */
 
 .navbar {
     position: fixed;
@@ -126,21 +103,149 @@ body label {
     background-color: white;
 }
 
-h1 b {
-    margin-bottom: 100px;
-    color: #B1D236;
-}
-
-footer {
-    background-color: #0072D1;
-    padding: 25px;
-}
-
-form .btn {
+.btn {
     width: 150px;
     background-color: #B1D236;
     color: white;
     margin-bottom: 20px;
+    width: 250px;
+}
+
+.btn:hover {
+    background-color: #0072D1;
+    color: white;
+}
+
+/* Carousel */
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #B1D236;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100;
+}
+
+.item-personalizado {
+    width: 100%;
+    height: 780px;
+}
+
+.indicador-personalizado {
+    background-color: #000000;
+    border-radius: 25%;
+}
+
+/* Modlee */
+
+#texto-modlee {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#texto-modlee b {
+    color: #f98012;
+}
+
+#banner-moodle {
+    padding: 15px;
+    background-color: #f98012;
+    border-radius: 0px 200px 200px 0px;
+    /*margin-left: -50px; */
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Gnosis */
+
+#banner-gnosis H1 {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0px 200px 200px 0px;
+    /*margin-left: -50px; */
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#banner-gnosis H1 b {
+    color: white;
+}
+
+/* Anticorrupcion */
+
+#banner-corrupcion {
+    font-size: 20px;
+    color: black;
+    border-radius: 0px 200px 200px 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Servicios  */
+
+.servicios {
+    margin-top: 25px;
+    color: #0072D1;
+    text-align: center;
+}
+
+.servicios .btn {
+    background-color: #B1D236;
+    color: white;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.servicios .btn:hover {
+    background-color: #0072D1;
+}
+
+/* Valores */
+
+.valores {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.valores img {
+    max-width: 100px;
+}
+
+.valores h1 {
+    color: #0072D1;
+}
+
+.valores p {
+    color: black;
+}
+
+.valores-iconos {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.valores-iconos img {
+    max-width: 100px;
+}
+
+.valores-iconos h2 {
+    color: black;
+    font-size: 20px;
+}
+
+/* Contacto*/
+
+#contenedor-contactanos {
+    margin-top: 70px;
 }
 
 .contacto h1 {
@@ -153,35 +258,4 @@ form .btn {
 
 .contacto p {
     color: #0072D1;
-}
-
-.seleccionado {
-    border-bottom: 4px solid #B1D236;
-}
-
-.carousel-inner {
-    width: 100%;
-    height: 100;
-}
-
-.indicador-personalizado {
-    background-color: #000000;
-    border-radius: 25%;
-}
-
-.servicios {
-    margin-top: 25px;
-    color: #0072D1;
-    text-align: center;
-}
-
-.servicios .btn {
-    background-color: #B1D236;
-    width: 300px;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-#contenedor-contactanos {
-    margin-top: 70px;
 }
