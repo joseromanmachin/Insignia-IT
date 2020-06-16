@@ -13,9 +13,21 @@
         font-size: 24px;
     }
 
-
+    .btn {
+        width: 150px;
+        background-color: #B1D236;
+        color: white;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    
+    .btn:hover {
+        background-color: #0072D1;
+        color: white;
+    }
+    
     .item-personalizado {
-        width: 100%;
+        width: 2048px;
         height: 700px;
     }
     #texto-modlee{
@@ -75,36 +87,68 @@
 @media (max-width: 560px) {
     .carousel-caption {
         z-index: 3;
-        margin-bottom: 150px;
+        margin-bottom: 5px;
         margin-left: -10px;
     }
 
     .carousel-caption h1 {
         padding: 10px;
-        font-size: 24px;
+        font-size: 22px;
     }
     .item-personalizado {
         width: 100%;
-        height: 780px;
+        height: 500px;
+    }
+    #texto-modlee{
+        font-size: 18px;
     }
     #banner-moodle {
-        font-size: 22px;
+        font-size: 14px;
     }
     #banner-moodle b {
-        font-size: 22px;
+        font-size: 14px;
     }
     #banner-gnosis h1 {
-        font-size: 22px;
+        font-size: 14px;
         background-color: #0672cd;
         color: white;
     }
+
     #banner-corrupcion {
-        font-size: 22px;
+        font-size: 24px;
+        padding: 0px;
+
+    }
+    #banner-corrupcion p{
+        font-size: 15px;
+    }
+ 
+    #talento-ti-titulo b {
+        color: #0672cd;
+        font-size: 30px;
     }
     #banner-talento {
-        font-size: 22px;
+        font-size: 16px;
         background-color: #0672cd;
         color: white;
+    }
+    #banner-talento img {
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+    #parrafo-talento{
+        font-size: 14px;
+        color: black;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 15px;
+        background-color: #B1D236;
+        color: white;
+        margin-bottom: 10px;
+        width: 200px;
     }
 }
 
@@ -174,18 +218,6 @@ footer h1 b {
     background-color: white;
 }
 
-.btn {
-    width: 150px;
-    background-color: #B1D236;
-    color: white;
-    margin-bottom: 20px;
-    width: 250px;
-}
-
-.btn:hover {
-    background-color: #0072D1;
-    color: white;
-}
 
 /* Carousel */
 
@@ -291,7 +323,6 @@ footer h1 b {
 /* Talento TI*/
 
 #banner-talento {
-    font-size: 22px;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 0px 200px 200px 0px;
