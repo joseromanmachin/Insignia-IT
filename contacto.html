@@ -78,7 +78,7 @@ $token = sha1($salt . $time);
 
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
-                        <input type='text' name='email' id='email' class="form-control" required>
+                        <input type='text' name='email' pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" id='email' class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="asunto">Asunto</label>
@@ -96,7 +96,7 @@ $token = sha1($salt . $time);
                 </form>
 
             </div>
-
+   
             <div class="col-sm-6 col-12 contacto">
                 <br>
                 <br>
@@ -132,6 +132,12 @@ $token = sha1($salt . $time);
             </div>
         </div>
 
+        <script>
+            var input = document.getElementById('email');
+            input.oninvalid = function(event) {
+            event.target.setCustomValidity('Formato de Correo Invalido');
+            }
+        </script>
 
 
     </div>
